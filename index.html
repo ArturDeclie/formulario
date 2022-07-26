@@ -7,9 +7,9 @@
 </head>
 
 <body background="img/fundo2.webp">
-<table align="center" bgcolor="#E0FFFF" cellpadding="5">
+<table align="center" bgcolor="#E0FFFF" cellpadding="5" width="1550">
     <tr>
-        <td colspan="2"><figure><img src="img/floco.png" alt="floco de neve" height="40" width="40"><font size="12" color="#483D8B"><b>Registro Campeonato de Inverno</b></font> <img src="img/floco.png" alt="floco de neve" height="40" width="40"></figure>
+        <td colspan="2" align="center"><figure><img src="img/floco.png" alt="floco de neve" height="40" width="40"><font size="12" color="#483D8B"><b>Registro Campeonato de Inverno</b></font> <img src="img/floco.png" alt="floco de neve" height="40" width="40"></figure>
          </td>
        
     </tr>
@@ -19,28 +19,28 @@
         <tr>
             <td>
                 <fieldset>
-                    <legend>Dados Básicos</legend>
+                    <legend><b>Dados Básicos</b></legend>
 
                     <form action="enviar.php" method="post" name="registro">
                     <table border="0">
                         <tr>
-                            <td><label>Data do Campeonato</label></td>
+                            <td><label><b>Data do Campeonato:</b></label></td>
                             <td><input type="date" name="camp" id="camp" value="2022-10-10" readonly></td>
                         </tr>
 
                         <tr>
-                            <td><label>Nome do Time:</label></td>
+                            <td><label><b>Nome do Time:</b></label></td>
                             <td><input type="text" id="nome" name="nome" placeholder="Digite o nome do time" size="55" required></td>
                         </tr>
 
                         <tr>
-                            <td><label>Data de Fundação:</label></td>
+                            <td><label><b>Data de Fundação:</b></label></td>
                             <td><input type="date" name="data" id="data" required></td>
                         </tr>
 
                         <tr>
-                            <td><label>País:</label></td>
-                            <td><label><input type="radio" name="país" id="país" value="arg" required >Argentina</label>
+                            <td><label><b>País:</b></label></td>
+                            <td><label><input type="radio" name="pais" id="pais" value="arg" required >Argentina</label>
                             <label><input type="radio" name="pais" id="pais" value="bra" required>Brasil</label>
                             <label><input type="radio" name="pais" id="pais" value="bol" required>Bolívia</label>
                             <label><input type="radio" name="pais" id="pais" value="chi" required>Chile</label>
@@ -54,7 +54,7 @@
                         </tr>
 
                         <tr>
-                            <td><label for="estado">Estado:</label></td>
+                            <td><label for="estado"><b>Estado:</b></label></td>
                             <td><select id="estado" name="estado">
                                     <option value="" align="center" selected="selected">--Se Brasileiro--</option>
 
@@ -103,22 +103,22 @@
                         </tr>
                     
                         <tr>
-                            <td><label>Cidade:</label></td>
+                            <td><label><b>Cidade:</b></label></td>
                             <td><input type="text" name="cidade" id="cidade" placeholder="Digite a Cidade" size="55" required></td>
                         </tr>
 
                         <tr>
-                            <td><label>E-Mail:</label></td>
+                            <td><label><b>E-Mail:</b></label></td>
                             <td><input type="email" name="email" id="email" placeholder="example@example.com" size="55" required></td>
                         </tr>
 
                         <tr>
-                            <td><label>Telefone de Contato:</label></td>
-                            <td><input type="tel" name="tel" id="tel" placeholder="+xx (xx)xxxxx-xxxx" size="55" disabled></td>
+                            <td><label><b>Telefone de Contato:</b></label></td>
+                            <td><input type="tel" name="tel" id="tel" placeholder="Campo desabilitado" size="55" disabled></td>
                         </tr>
 
                         <tr>
-                            <td><label>Campeonato Disputado:</label></td>
+                            <td><label><b>Campeonato Disputado:</b></label></td>
                             <td><input list="campeonatos" required placeholder="Selecione uma das opções" size="55"></td>
                             <datalist id="campeonatos">
                                 <option value="Campeonato Argentino Série A"></option>
@@ -149,12 +149,12 @@
 
                       
                         <tr>
-                            <td><label>Site do Time:</label></td>
+                            <td><label><b>Site do Time:</b></label></td>
                             <td><input type="url" name="site" id="site" placeholder="https://www.url.com/" size="55"></td>
                         </tr>
 
                         <tr>
-                            <td><label>Redes Sociais</label></td>
+                            <td><label><b>Redes Sociais:</b></label></td>
                             <td><textarea name="redes" id="redes" cols="54" rows="6" maxlength="500" placeholder="Digite as redes sociais (Max 500 caracteres)"></textarea></td>
                         </tr>
                     </table>
@@ -163,53 +163,53 @@
                 <br/><br/>
 
                 <fieldset>
-                    <legend>Outros Dados</legend>
+                    <legend><b>Outros Dados</b></legend>
                     <table border="0">               
                         <tr>    
-                            <td><label>Cores do time: </label></td>
+                            <td><label><b>Cores do time:</b> </label></td>
                             <td><label><input type="color" name="cor" id="cor" required>Cor Primária</label><br/>
                             <label><input type="color" name="cor2" id="cor2" required>Cor Secundária</label></td>
                         </tr>
 
                         <tr>
-                            <td><label>Nome do Mascote:</label></td>
+                            <td><label><b>Nome do Mascote:</b></label></td>
                             <td><input type="text" name="mascote" id="mascote" placeholder="Nome do mascote" size="55" required></td>
                         </tr>
 
                         <tr>
-                            <td><label>Sigla do Time: </label></td>
+                            <td><label><b>Sigla do Time:</b> </label></td>
                             <td><input type="text" name="sigla" id="sigla" maxlength="3" placeholder="Sigla do time (Max 3 caracteres)" size="55" required></td>
                         </tr>
 
                         <tr>
-                            <td><label>Capitão do Time: </label></td>
+                            <td><label><b>Capitão do Time:</b> </label></td>
                             <td><input type="text" name="cap" id="cap" placeholder="Nome do capitão" size="55" required></td>
                         </tr>
 
                         <tr>
-                            <td><label>Técnico: </label></td>
+                            <td><label><b>Técnico:</b> </label></td>
                             <td><input type="text" name="tec" id="tec" placeholder="Nome do técnico" size="55" required></td>
                         </tr>
 
                         <tr>
-                            <td><label>Presidente</label></td>
+                            <td><label><b>Presidente</b></label></td>
                             <td><input type="text" name="pres" id="pres" placeholder="Nome do presidente" size="55" required> </td>
                         </tr>
 
                         <tr>
-                            <td><label>Número de Jogadores no  <br/> Elenco: </label></td>
+                            <td><label><b>Número de Jogadores no  <br/> Elenco:</b> </label></td>
                             <td><input type="number" name="jog" id="jog" min="16" max="35" placeholder="16" required></td>
                         </tr>
 
                         <tr>
-                            <td><label>Média de Idade <br/>do Elenco:</label></td>
+                            <td><label><b>Média de Idade <br/>do Elenco:</b></label></td>
                             <td><label>16</label>
                             <input type="range" name="media" id="media">
                             <label>40</label></td>
                         </tr>
 
                         <tr>
-                            <td><label>Classificação no <br/>Último Nacional:</label></td>
+                            <td><label><b>Classificação no <br/>Último Nacional:</b></label></td>
                             <td><label><input type="checkbox" name="1" id="1" value="1-5">1º ao 5º Lugar</label>
                                 <label><input type="checkbox" name="6" id="6" value="1-5">6º ao 10º Lugar</label><br/>
                                 <label><input type="checkbox" name="11" id="11" value="1-5">11º ao 15º Lugar</label>
@@ -217,7 +217,7 @@
                         </tr>
 
                         <tr>
-                            <td><label>Escudo do Clube:</label></td>
+                            <td><label><b>Escudo do Clube:</b></label></td>
                             <td><input type="file" name="escudo" id="escudo" required></td>
                         </tr>
 
@@ -233,8 +233,8 @@
      
                     </table>
                 </fieldset>
-                
-             </form>
+            </form>
+             
             </td>
         </tr>
     </table>
